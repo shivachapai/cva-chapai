@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap - Prebuilt Layout</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap-4.4.1.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	<a class="navbar-brand" href=""><img src="images/logocva.png" width="100" height="48" alt="#"/></a>	
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+             <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+             </li>
+             <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+             </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Projects.html">Project</a>
+			  </li>
+			    <li class="nav-item">
+             <a class="nav-link" href="Services.html">Services</a>
+			  </li>
+             </ul>
+       </div>
+    </nav>
+    <h1 class="aboutsub-title">About Me</h1>
+    <div class="imgtext">
+	 <img src="images/cva.jpg" alt="" width="300" height="200" class="aboutimg"/> 
+    <h4>こんにちは、私はチャパイシバクマルと申します。ネパールのチタワン出身で、現在は福岡県に住んでいます。
+
+私はコンピューターサイエンスの専攻で学ぶ学生です。趣味は、新しいプログラミング言語を学ぶことや、ウェブ開発をすることです。最近はReactとNext.jsを使ったアプリ開発に興味を持っています。
+私の特徴としては、チームワークを大切にすることが挙げられます。コンピューターサイエンスのプロジェクトでグループワークを行ってきた経験から、相手の意見を尊重し、協力して問題を解決することが重要だと学びました。
+
+これまでの経験としては、学生時代に機械学習を用いたプロジェクトに参加し、ニューラルネットワークの構築やデータ分析を担当しました。また、最近はReactを使ってWebアプリの開発をしています。
+今後の目標としては、日本語能力試験N1の合格や、AI分野での研究開発に携わることが挙げられます。AIに興味を持ち、日本語でのコミュニケーション能力を高めることで、世界的に注目されているAI分野で貢献したいと思っています。
+
+      以上が私の自己紹介でした。よろしくお願いいたします。</h4>
+		
+
+		
+		
+<div class="tab-titles">
+    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+    <p class="tab-links" onclick="opentab('Education')">Education</p>
+</div>
+
+<div id="Skills" class="tabcontent" style="display: block;">
+    <h3>Skills</h3>
+    <h3>My Skills</h3>
+    <ul>
+        <li>Web development </li>
+        <li>Database design and management </li>
+        <li>Project management</li>
+    </ul>
+</div>
+
+</div>
+
+<div id="Experience" class="tabcontent">
+    <h3>Experience</h3>
+    <ul>
+        <li><span>2022</span>Web development (HTML, CSS, JavaScript, PHP)</li>
+        <li><span>2021</span>Database design and management (SQL, MongoDB)</li>
+        <li><span>2019</span>Graphic design (Photoshop, Illustrator, InDesign)</li>
+        <li><span>2017</span>Project management (Agile, Scrum, Kanban, etc.)</li>
+    </ul>
+</div>
+
+<div id="Education" class="tabcontent">
+    <h3>Education</h3>
+    <ul>
+     <li><span>2021-2025</span>九州情報大学で経営情報ネットワーク学部勉強中</li>
+    <li><span>2019-2021</span>日本語学卒業（日本国際言語学アカデミー）</li>
+    <li><span>2017-2021</span>Studied at Nepal institute of hardware and software techologe p.Ltd(NISHT)</li>
+    <li><span>2015-2017</span>studied computer Science at Oxford collage of Engineeringe and Management</li>
+    </ul>
+</div>
+        
+<script>
+function opentab(tabname) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tab-links");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active-link", "");
+    }
+    document.getElementById(tabname).style.display = "block";
+    event.currentTarget.className += " active-link";
+}</script>
+<fieldset>
+<legend>GET TOUCH</legend>
+      <label>Firstname:
+  <input type="text" name="firstname" placeholder="Firstname" required></label><br>
+      <label>Lastname:</label>
+      <input type="text" name="lastname" placeholder="lastname" required> <br>
+    <label>Date of birt&nbsp; &nbsp; &nbsp;&nbsp;</label>
+    <input type="date" name="date" required> 
+    <br>
+  <lable for="gender" required>Gender:</lable>&nbsp;
+  <label>Email:</label>
+  <input type="email" name="email" placeholder="Email Address" required><br>
+   
+  <label for="phone"> Phone number:</label>
+   <input type="tel" id="phone" name="phone" placeholder="000-0000-0000" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" required><br> 
+    <div class="submit">
+    <input type="submit" class="submit send" value="Submit"> &nbsp;  &thinsp; 
+     <input type="reset" value="Reset"> 
+	</div>
+	<br>
+	<br>
+	<div class="social-media">
+      <li><a href="https://www.facebook.com/shiva_chapai"><img src="images/facebook-logo.png" alt="Facebook"></a></li>
+       <li><a href="https://www.line.com/shiva_chapai"><img src="images/line.jpeg" alt="LINE"></a></li>  
+      <li><a href="https://www.twitter.com/yourprofile"><img src="images/twitter-logo.png" alt="Twitter"></a></li>
+      <li><a href="https://www.instagram.com/shiva_chapai"><img src="images/instagram-logo.png" alt="Instagram"></a></li>
+    
+  </div>
+	</fieldset>
+	  <div class="row">
+          <div class="text-center col-lg-6 offset-lg-3">
+             <h4>Footer </h4>
+             <p>Copyright &copy; 2021 &middot; All Rights Reserved &middot; <a href="#" >My Website</a></p>
+          </div>
+       </div>
+	  
+</body>
+    </html>
+ 
